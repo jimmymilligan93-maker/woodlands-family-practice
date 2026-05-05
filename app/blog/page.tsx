@@ -1,23 +1,23 @@
 // TODO: Replace with Sanity CMS data source when CMS is configured
 
 import { BookingCtaBanner } from "@/components/BookingCtaBanner";
+import { BlogGrid } from "@/components/blog/BlogGrid";
 import { Footer } from "@/components/Footer";
-import { NewsGrid } from "@/components/news/NewsGrid";
 import { PageHero } from "@/components/PageHero";
 
 export const metadata = {
-  title: "News & Updates",
+  title: "Blog",
 };
 
-export default function NewsPage() {
+export default function BlogPage() {
   return (
     <>
       <PageHero
-        title="News & Updates"
+        title="Blog"
         subtitle="Health information, practice updates and seasonal advice from our team."
       />
       <section className="bg-cream py-16 md:py-24">
-        <NewsGrid />
+        <BlogGrid />
       </section>
       <BookingCtaBanner />
       <Footer />

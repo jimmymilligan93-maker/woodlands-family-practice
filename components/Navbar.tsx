@@ -15,7 +15,7 @@ const practiceSub = [
 
 const mobileNavTail = [
   { href: "/patient-info", label: "Patient Info" },
-  { href: "/news", label: "News" },
+  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -129,10 +129,10 @@ export function Navbar() {
               Patient Info
             </Link>
             <Link
-              href="/news"
+              href="/blog"
               className={`font-dm text-sm font-medium transition-colors hover:text-terra ${navTextClass}`}
             >
-              News
+              Blog
             </Link>
             <Link
               href="/contact"

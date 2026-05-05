@@ -14,7 +14,7 @@ const articles = [
     date: "3 May 2026",
     image:
       "https://images.unsplash.com/photo-1584118624012-df056829fbd0?w=800&q=80",
-    href: "/news",
+    href: "/blog",
   },
   {
     category: "Skin health",
@@ -24,17 +24,17 @@ const articles = [
     date: "18 April 2026",
     image:
       "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&q=80",
-    href: "/news",
+    href: "/blog",
   },
   {
-    category: "Practice news",
+    category: "Practice updates",
     title: "Welcoming new patients to Woodlands",
     excerpt:
       "Changing GP practices can feel daunting. Here is how to request a transfer of your records, what identification to bring, and how we structure longer first appointments so your new doctor understands your history.",
     date: "2 April 2026",
     image:
       "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=80",
-    href: "/news",
+    href: "/blog",
   },
   {
     category: "Chronic care",
@@ -44,11 +44,11 @@ const articles = [
     date: "20 March 2026",
     image:
       "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
-    href: "/news",
+    href: "/blog",
   },
 ];
 
-export function NewsGrid() {
+export function BlogGrid() {
   return (
     <motion.div
       className="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-6 md:grid-cols-2"

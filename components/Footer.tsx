@@ -48,8 +48,8 @@ export function Footer() {
             <Link href="/patient-info" className={colClass}>
               Patient Info
             </Link>
-            <Link href="/news" className={colClass}>
-              News
+            <Link href="/blog" className={colClass}>
+              Blog
             </Link>
             <Link href="/contact" className={colClass}>
               Contact
