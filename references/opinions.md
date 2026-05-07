@@ -1,47 +1,49 @@
-# Opinions — strong stances (max one per piece)
+# Opinions guide — WFP blogs
 
-Each opinion below is something the practice can defend because it matches how we operate and what we publish. Use **at most one** per blog post or long page, and **tie it to a number or concrete fact** from `references/stats.md` or from approved clinical copy (e.g. appointment length).
+## Why GPs have opinions
+Real doctors have mild but genuine takes. Expressing them — carefully — 
+is what separates human writing from AI output. Opinions signal expertise 
+and experience. They are not controversial. They are the kind of thing 
+a GP might say in a consultation: "Honestly? I'd rather you came in earlier."
 
-## Continuity beats transactional care
+## Pre-approved GP opinion bank
 
-**Opinion:** Short, anonymous "triage only" interactions are a poor substitute for general practice when you have multiple chronic conditions or need coordinated follow-up.
+### On preventative care
+"In my experience, the patients who come in before they're sick are the 
+easiest to help. Waiting until something goes wrong makes everything harder."
 
-**Number to cite:** Standard appointments are typically **10–15 minutes**; we ask patients to book a longer slot when they have several issues—because trying to compress complex care into a single short visit serves nobody well.
+"Australians are generally good at sports medicine and terrible at 
+preventative medicine. We'll get a physio for a sore knee but won't 
+book a skin check for five years."
 
-## Private billing and transparency
+### On mental health
+"Mental health referrals are still, somehow, a conversation I have to 
+initiate. Most patients are relieved when I bring it up. They were 
+waiting for permission."
 
-**Opinion:** Patients deserve to know billing is private **before** they commit to an appointment, not as a surprise at the desk.
+"A Mental Health Care Plan through Medicare isn't a last resort. 
+It's just good healthcare."
 
-**Fact to cite:** We state clearly that Woodlands Family Practice is a **private billing** clinic; reception can give **estimates** when you book (see Patient Info).
+### On WA-specific health
+"Western Australia has the highest rate of skin cancer in Australia. 
+That's not a scare tactic. That's just the data. And it's very 
+preventable with the right habit."
 
-## Scripts and referrals need a consultation
+"The Perth heat changes how I think about a lot of consultations — 
+hydration, medication timing, exercise advice. It's genuinely different 
+to practising medicine in Melbourne."
 
-**Opinion:** Repeat prescriptions and referrals should not be treated as automatic vending-machine outputs; they need a clinician to confirm they remain appropriate.
+### On the healthcare system
+"Bulk billing gets complicated to explain and I understand why patients 
+find it confusing. The simple version: Medicare covers a lot, but not everything, 
+and knowing the difference saves stress."
 
-**Anchor:** Patient Info explains that repeats and referrals **usually require an appointment**; extensions without review are **limited** and never something to assume.
+"Telehealth is genuinely useful for the right things. It is not a 
+replacement for being in the room, and I'll always say so."
 
-## When we are not the right service
+### On patient behaviour (warm, not preachy)
+"The thing I wish more patients knew: you don't need to be 'sick enough' 
+to see a GP. That's not how preventative care works."
 
-**Opinion:** Marketing that tries to capture every searcher—emergency symptoms included—does more harm than good.
-
-**Stance:** We direct people to **1300 644 483** after hours for deputising and to **000** in an emergency. Saying when **not** to use general practice is part of trustworthy local SEO.
-
-## Scale as trust, not factory throughput
-
-**Opinion:** A stable team of **11 GPs** and **25+ years** in the same community is evidence of relationships, not a conveyor belt.
-
-**Number to cite:** **11** GPs; **25+** years; **4.8★** on Google as displayed on the site—use exactly as in `stats.md`, without inventing review volume.
-
-## Skin checks and dedicated time (when discussing Dr Leon Chu or skin services)
-
-**Opinion:** Quality skin cancer screening needs dedicated time; "squeeze it in" at the end of another visit is the wrong model.
-
-**Anchor:** Dr Leon Chu's published note: **comprehensive skin checks are only performed as a separate dedicated appointment**; fees vary by complexity and time—patients should **ask reception** (from on-site bio text).
-
----
-
-## Usage rules
-
-- Do not stack multiple "hot takes" in one article.
-- Every opinion should connect to patient benefit or safety, not industry trash talk.
-- If you cannot cite a matching number or published policy line, soften the claim or remove it.
+"Skin checks take fifteen minutes. Melanomas, if caught late, take much longer 
+to deal with. I know which appointment I'd rather you booked."

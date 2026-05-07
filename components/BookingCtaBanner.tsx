@@ -24,7 +24,7 @@ export function BookingCtaBanner() {
           href={BOOKING_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-8 inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg bg-terra px-8 py-3 font-dm text-sm font-medium text-cream"
+          className="mt-8 inline-flex min-h-[48px] min-w-[48px] items-center justify-center rounded-lg bg-terra px-8 py-3.5 font-dm text-sm font-semibold text-cream"
         >
           Book Appointment
         </Link>

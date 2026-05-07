@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { siteHeroVisionBandUrl } from "@/lib/site-images";
 import { fadeUp, inViewOpts, staggerContainer } from "@/lib/motion";
 
 const blobRadius = "45% 55% 48% 52% / 52% 45% 55% 48%";
@@ -23,7 +24,7 @@ export function HomePracticeStory() {
             style={{ borderRadius: blobRadius }}
           >
             <Image
-              src="https://wfpwa.com.au/wp-content/uploads/2022/10/vision-image.jpg"
+              src={siteHeroVisionBandUrl(720)}
               alt="Clinic interior"
               fill
               className="object-cover"

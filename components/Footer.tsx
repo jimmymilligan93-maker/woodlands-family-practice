@@ -30,7 +30,7 @@ export function Footer() {
 
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           <div>
-            <h3 className="mb-3 font-dm text-xs uppercase tracking-widest text-mist/40">
+            <h3 className="mb-3 font-dm text-xs uppercase tracking-widest text-mist/75">
               Navigate
             </h3>
             <Link href="/" className={colClass}>
@@ -56,7 +56,7 @@ export function Footer() {
             </Link>
           </div>
           <div>
-            <h3 className="mb-3 font-dm text-xs uppercase tracking-widest text-mist/40">
+            <h3 className="mb-3 font-dm text-xs uppercase tracking-widest text-mist/75">
               Services
             </h3>
             <Link href="/services" className={colClass}>
@@ -76,7 +76,7 @@ export function Footer() {
             </Link>
           </div>
           <div>
-            <h3 className="mb-3 font-dm text-xs uppercase tracking-widest text-mist/40">
+            <h3 className="mb-3 font-dm text-xs uppercase tracking-widest text-mist/75">
               Practice
             </h3>
             <Link href="/our-practice" className={colClass}>
@@ -90,7 +90,7 @@ export function Footer() {
             </Link>
           </div>
           <div>
-            <h3 className="mb-3 font-dm text-xs uppercase tracking-widest text-mist/40">
+            <h3 className="mb-3 font-dm text-xs uppercase tracking-widest text-mist/75">
               Contact
             </h3>
             <a href={PHONE_URL} className={colClass}>
@@ -117,7 +117,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-2 border-t border-white/8 pt-3 font-dm text-xs text-mist/50 md:flex-row md:items-center md:justify-between">
+        <div className="mt-10 flex flex-col gap-2 border-t border-white/8 pt-3 font-dm text-xs text-mist/70 md:flex-row md:items-center md:justify-between">
           <span>
             © {new Date().getFullYear()} Woodlands Family Practice. All rights reserved.
           </span>

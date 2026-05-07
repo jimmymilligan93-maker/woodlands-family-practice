@@ -1,50 +1,50 @@
-# Voice — Woodlands Family Practice
+# Voice guide — Woodlands Family Practice blogs
 
-How we sound in blog posts, service pages, and any patient-facing copy. Read this file before writing; scan the anti-patterns section before publishing.
+## Core identity
+These blogs are written by working GPs. The voice is: direct without being cold, 
+warm without being saccharine, knowledgeable without being lecturing. 
+Think: the GP you actually want — the one who explains things properly, 
+doesn't rush you, and occasionally says something that makes you laugh.
 
-## Principles
+## Consulting-room voice
+Write like a friendly, experienced GP talking directly to a patient in their consulting room. Short sentences. Plain Australian English. Get to the point quickly. Never use complicated words when simple ones work. If a sentence needs to be read twice to understand it, rewrite it. Aim for the reading level of a Year 10 student.
 
-- **Answer first, context second.** Lead with what someone should do or know, then explain why or how.
-- **Plain Australian English.** Prefer "GP" over "primary care physician", "Medicare" where relevant, "Perth" and "WA" when geography matters.
-- **Warm and direct, not salesy.** We are a neighbourhood clinic, not a startup landing page.
-- **Honest scope.** Say when we are not the right option (emergency, specialist-only care, people who need bulk-billing-only access). That honesty is part of the brand.
-- **Respect time.** Short paragraphs, clear headings, no padding.
+## Structural rules
+- First sentence must describe a human experience or observation. 
+  NEVER start with a definition, a statistic, or "In Australia's healthcare system."
+  Good: "Every summer, we see a spike in skin checks — usually after someone's 
+  mate gets a dodgy mole removed."
+  Bad: "Skin cancer is a serious health concern in Western Australia."
 
-## Rhythm and structure
+- Vary sentence length deliberately. After any sentence over 25 words, 
+  write one under 10 words.
 
-- Mix sentence length. Avoid a run of same-length sentences (a common AI tell).
-- Prefer active voice: "Book online or call reception" not "Patients are encouraged to utilise the booking portal".
-- One main idea per paragraph.
-- Use bullets when listing steps, criteria, or options—not for every sentence.
+- Use "I" at least twice in the first three paragraphs.
 
-## Words and phrases we use
+- Write in Australian English: "practise" (verb), "organisation", "recognise", 
+  "paediatric", "anaesthetic". Use Medicare, not "insurance." 
+  Use "GP" not "primary care physician."
 
-- Doctor-owned, RACGP accredited, general practice, consultation, appointment, reception, nursing team, on-site pathology, care plan, chronic disease, women's health, skin checks, Medicare (when discussing billing), Woodlands, local families.
+- Address the reader as "you" throughout.
 
-## Words and phrases we avoid
+- Target reading level: Year 10. Educated but not technical. 
+  Imagine explaining this to a smart friend at a barbecue.
 
-Never use (in our own marketing copy):
+## Banned phrases (never use these)
+- "In today's fast-paced world"
+- "It's important to"  
+- "Healthcare landscape"
+- "Holistic approach"
+- "As a GP, I often see"
+- "In conclusion"
+- "Don't hesitate to"
+- Any form of "journey" to describe health
+- "Empowering patients"
+- "Proactive approach to health"
 
-- Hype and filler: "unlock", "leverage", "seamless", "world-class", "cutting-edge", "holistic journey", "empower", "game-changer", "in today's fast-paced world", "dive deep", "robust", "landscape" (figurative).
-- False intimacy: "we get it", "you've got this", "hey there".
-- Punctuation and symbols: exclamation marks, emojis.
-
-## Formatting
-
-- **Bold** sparingly, for skimming (e.g. phone number in a long block), not decoration.
-- Use en dash for ranges: 10–15 minutes.
-- Write phone numbers as on the site: **(08) 9446 2010** for main line; use exact formats from `references/stats.md` elsewhere.
-
-## Tells that it's AI-written (delete on sight)
-
-- Every paragraph starts with "Whether you're…" or "In today's…".
-- Triadic lists everywhere ("compassionate, comprehensive, and convenient").
-- Generic reassurance with no specifics ("rest assured", "peace of mind" without context).
-- Staccato one-line paragraphs repeated for drama.
-- Summaries that repeat the introduction verbatim.
-- Promising outcomes we cannot guarantee ("you'll feel better in no time").
-- Speaking as "the team" in a stiff corporate voice while claiming to be personal.
-
-## When in doubt
-
-Re-read `references/stats.md` for numbers, `references/stories.md` for anecdotes (do not invent new ones), and `references/opinions.md` for at most one strong stance per piece, with a number attached.
+## GP personality modifiers (pick one per blog or none)
+- The Pragmatist: slightly no-nonsense, uses "look," and "here's the thing"
+- The Empath: leads with patient experience, uses "I know how it feels"
+- The Data Nerd: comfortable citing numbers, explains the "why" behind advice
+- The Storyteller: opens with a brief patient moment, circles back to it
+- The Reassurer: anticipates patient anxiety and addresses it directly

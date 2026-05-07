@@ -7,14 +7,24 @@ import { fadeUp, inViewOpts, staggerContainer } from "@/lib/motion";
 
 const articles = [
   {
-    category: "Seasonal health",
-    title: "Flu season: protecting your household",
+    category: "Finding a GP",
+    title: "How do I find a GP accepting new patients in Perth?",
     excerpt:
-      "Influenza spreads quickly once cooler weather arrives. We outline who should prioritise vaccination, how to recognise warning signs in vulnerable family members, and when to seek a same-day review.",
-    date: "3 May 2026",
+      "Authoritative directories, reception scripts, Medicare paperwork, longer first bookings, and honest language about closed lists—plus how Woodlands fits northern Perth families relocating or swapping clinics.",
+    date: "7 May 2026",
     image:
-      "https://images.unsplash.com/photo-1584118624012-df056829fbd0?w=800&q=80",
-    href: "/blog",
+      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
+    href: "/blog/gp-accepting-new-patients-perth",
+  },
+  {
+    category: "Mental health",
+    title: "What is a mental health care plan?",
+    excerpt:
+      "How GP mental health treatment plans work under Medicare, who is eligible, how rebated sessions fit together, and how to book a proper-length appointment in Perth and WA.",
+    date: "5 May 2026",
+    image:
+      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+    href: "/blog/mental-health-care-plan",
   },
   {
     category: "Skin health",

@@ -1,10 +1,7 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { BOOKING_URL } from "@/lib/constants";
-import { fadeUp, inViewOpts, staggerContainer } from "@/lib/motion";
+import { siteHeroVisionBandUrl } from "@/lib/site-images";
 
 const blobRadius = "40% 60% 55% 45% / 45% 38% 62% 55%";
 
@@ -12,37 +9,19 @@ export function HomeHero() {
   return (
     <section className="bg-cream py-16 md:py-24">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 md:grid-cols-[7fr_5fr]">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={inViewOpts}
-          variants={staggerContainer}
-        >
-          <motion.p
-            variants={fadeUp}
-            className="font-dm text-xs uppercase tracking-widest text-slate"
-          >
+        <div>
+          <p className="font-dm text-xs uppercase tracking-widest text-slate">
             WOODLANDS, WA 6018 · EST. 1999
-          </motion.p>
-          <motion.h1
-            variants={fadeUp}
-            className="mt-4 font-cormorant text-4xl font-light leading-tight text-navy md:text-6xl lg:text-7xl"
-          >
+          </p>
+          <h1 className="mt-4 font-cormorant text-4xl font-light leading-tight text-navy md:text-6xl lg:text-7xl">
             Your family&apos;s health, in{" "}
             <span className="font-cormorant italic text-terra">trusted</span> hands.
-          </motion.h1>
-          <motion.p
-            variants={fadeUp}
-            className="mt-6 max-w-md font-dm text-base leading-relaxed text-slate"
-          >
-            We are a doctor-owned, RACGP accredited practice providing personal,
-            comprehensive care for Woodlands and surrounding communities for
-            over 25 years.
-          </motion.p>
-          <motion.div
-            variants={fadeUp}
-            className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center"
-          >
+          </h1>
+          <p className="mt-6 max-w-md font-dm text-base leading-relaxed text-slate">
+            We are a doctor-owned, RACGP accredited practice providing personal, comprehensive care for
+            Woodlands and surrounding communities for over 25 years.
+          </p>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Link
               href={BOOKING_URL}
               target="_blank"
@@ -57,37 +36,32 @@ export function HomeHero() {
             >
               Our Services
             </Link>
-          </motion.div>
-          <motion.p
-            variants={fadeUp}
-            className="mt-8 font-dm text-xs text-silver"
-          >
-            ★★★★★ 4.8 on Google · RACGP Accredited · Doctor-owned · On-site
-            Pathology
-          </motion.p>
-        </motion.div>
+          </div>
+          <p className="mt-8 font-dm text-xs text-slate">
+            <span aria-hidden="true" className="text-navy/70">
+              ★★★★★
+            </span>{" "}
+            <span>Rated 4.8 on Google</span>
+            <span className="text-slate"> · RACGP Accredited · Doctor-owned · On-site Pathology</span>
+          </p>
+        </div>
 
-        <motion.div
-          className="relative hidden min-h-[420px] md:block"
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={inViewOpts}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        >
+        <div className="relative hidden min-h-[420px] md:block">
           <div
             className="absolute inset-0 overflow-hidden bg-gradient-to-br from-navy to-slate shadow-xl"
             style={{ borderRadius: blobRadius }}
           >
             <Image
-              src="https://wfpwa.com.au/wp-content/uploads/2022/10/vision-image.jpg"
-              alt="Woodlands Family Practice"
+              src={siteHeroVisionBandUrl(840)}
+              alt="Woodlands Family Practice reception and clinical team area"
               fill
               className="object-cover"
               sizes="(min-width: 768px) 40vw, 100vw"
               priority
+              fetchPriority="high"
             />
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

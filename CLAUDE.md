@@ -27,13 +27,15 @@ When writing **any blog post, service page, or customer-facing copy**, read the 
 
 - Never use AI-tell phrases (e.g. "unlock", "leverage", "seamless", "world-class", "in today's fast-paced world"), exclamation marks, or emojis
 - Start with the answer; add context after
-- Use real numbers from `stats.md`, never round
+- Use real numbers from `stats.md`; round for readability unless precision is essential
 - One story per post max (from `stories.md`, don't invent new ones)
 - One strong opinion per post max (from `opinions.md`, backed by a number)
 - Tell people when NOT to hire you — biggest voice tell
+- **Rule 1 — Image limits:** Blog posts must use a maximum of 2 images pulled from Pexels. A third image is only permitted for posts over 1,500 words. Never repeat the same image twice in the same post. Place one image near the top as the hero image and one image roughly halfway through the post above a H2 heading.
+- **Rule 2 — Research transparency:** Never explain your research process, methodology, or sources in the body of the blog post. Never reference competitor pages, ranking guides, or SEO research in the content itself. The research informs the writing — it is never mentioned in the writing.
 
 
-Before shipping any writing, re-read `references/voice.md` → "Tells that it's AI-written" and delete anything that matches.
+Before shipping any writing, re-read `references/voice.md` sections on structural rules and banned phrases, and remove anything that matches.
 
 
 ---
@@ -62,10 +64,10 @@ Required for every long-form post:
 
 
 Site-wide:
-- `app/sitemap.ts` — auto-generated sitemap covering all routes
-- `app/robots.ts` — allows all crawlers, points to sitemap
+- `public/sitemap.xml` — canonical URL list for crawlers (update `lastmod` when pages materially change)
+- `public/robots.txt` — allows all crawlers; references the sitemap URL (must match production hostname)
 - Canonical URLs on every page (via `metadata.alternates.canonical`)
-- Open Graph images (1200×630) — `/public/og/*.png`
+- Open Graph images (1200×630) — use `/public/og/*.png` where available, or approved external image URLs
 - Image width/height attributes for CLS
 - Semantic HTML5 (`<header>`, `<nav>`, `<main>`, `<article>`, `<footer>`)
 - Static pre-rendering — `output: 'export'`
@@ -109,10 +111,10 @@ Premium, modern, elegant. Subtle animations, proper spacing, clear visual hierar
 
 
 - **Language:** TypeScript
-- **Framework:** Next.js 15 (App Router)
+- **Framework:** Next.js 14 (App Router)
 - **Rendering:** Static Site Generation via `output: 'export'`. `out/` is the deployable.
 - **Styling:** Tailwind CSS
-- **Content:** Flat TypeScript files in `/content/*.ts`. No database.
+- **Content:** Route-level content in `app/**` plus shared data in `lib/**`. No database.
 - **Deployment:** Vercel
 
 
@@ -143,7 +145,7 @@ Premium, modern, elegant. Subtle animations, proper spacing, clear visual hierar
 
 - One component per file
 - Shared components live in `/components/`
-- Page-specific content lives in `/content/*.ts`
+- Page-specific content lives with routes in `app/**` and shared structures in `lib/**`
 - Don't create new top-level folders without asking
 
 

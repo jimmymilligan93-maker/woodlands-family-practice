@@ -1,6 +1,5 @@
 "use client";
 
-import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,25 +18,20 @@ const mobileNavTail = [
   { href: "/contact", label: "Contact" },
 ];
 
-const linkMotion = {
-  hidden: { opacity: 0, y: 24 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: "easeOut" as const },
-  },
-};
-
 export function Navbar() {
   const pathname = usePathname();
-  const { scrollY } = useScroll();
-  const [scrolled, setScrolled] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [practiceOpen, setPracticeOpen] = useState(false);
 
-  useMotionValueEvent(scrollY, "change", (y) => {
-    setScrolled(y > 80);
-  });
+  useEffect(() => {
+    const onScroll = () => setScrollY(window.scrollY);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const scrolled = scrollY > 80;
 
   const transparentNeedsCreamNav =
     !scrolled && pathname !== "/" && pathname !== null;
@@ -64,6 +58,9 @@ export function Navbar() {
     ? "bg-cream/95 shadow-sm backdrop-blur-md"
     : "bg-transparent";
 
+  /** Avoid competing with the homepage / blog hero for LCP bandwidth. */
+  const logoPriority = pathname === "/";
+
   return (
     <>
       <header
@@ -77,7 +74,8 @@ export function Navbar() {
               width={44}
               height={44}
               className="rounded-full object-cover"
-              priority
+              priority={logoPriority}
+              fetchPriority={logoPriority ? "high" : "low"}
             />
             <div className="flex flex-col leading-tight">
               <span
@@ -163,115 +161,90 @@ export function Navbar() {
         </div>
       </header>
 
-      <AnimatePresence>
-        {mobileOpen ? (
-          <motion.div
-            className="fixed inset-0 z-[100] flex flex-col bg-navy md:hidden"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.25 }}
-          >
-            <div className="flex h-16 shrink-0 items-center justify-between px-6">
-              <Image
-                src="/logo.png"
-                alt=""
-                width={40}
-                height={40}
-                className="rounded-full object-cover"
-              />
+      {mobileOpen ? (
+        <div className="fixed inset-0 z-[100] flex animate-mh-nav-overlay flex-col bg-navy md:hidden">
+          <div className="flex h-16 shrink-0 items-center justify-between px-6">
+            <Image src="/logo.png" alt="" width={40} height={40} className="rounded-full object-cover" />
+            <button
+              type="button"
+              className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center text-cream"
+              aria-label="Close menu"
+              onClick={() => setMobileOpen(false)}
+            >
+              <X className="h-7 w-7" />
+            </button>
+          </div>
+
+          <div className="flex flex-1 flex-col overflow-y-auto px-6 pb-8 pt-4">
+            <Link
+              href="/services"
+              className="block border-b border-white/10 py-3 font-cormorant text-5xl font-light text-cream"
+              onClick={() => setMobileOpen(false)}
+            >
+              Services
+            </Link>
+
+            <div className="border-b border-white/10">
               <button
                 type="button"
-                className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center text-cream"
-                aria-label="Close menu"
-                onClick={() => setMobileOpen(false)}
+                className="flex w-full min-h-[44px] items-center justify-between py-3 text-left font-cormorant text-5xl font-light text-cream"
+                onClick={() => setPracticeOpen((p) => !p)}
+                aria-expanded={practiceOpen}
               >
-                <X className="h-7 w-7" />
+                Our Practice
+                <ChevronDown
+                  className={`h-6 w-6 shrink-0 transition-transform ${practiceOpen ? "rotate-180" : ""}`}
+                />
               </button>
+              {practiceOpen ? (
+                <div className="border-t border-white/10 pb-3 pl-6">
+                  {practiceSub.map((s) => (
+                    <Link
+                      key={s.href}
+                      href={s.href}
+                      className="block py-2 font-cormorant text-3xl font-light text-mist/70"
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      {s.label}
+                    </Link>
+                  ))}
+                </div>
+              ) : null}
             </div>
 
-            <motion.div
-              className="flex flex-1 flex-col overflow-y-auto px-6 pb-8 pt-4"
-              initial="hidden"
-              animate="visible"
-              variants={{
-                visible: { transition: { staggerChildren: 0.12 } },
-                hidden: {},
-              }}
+            {mobileNavTail.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="block border-b border-white/10 py-3 font-cormorant text-5xl font-light text-cream"
+                onClick={() => setMobileOpen(false)}
+              >
+                {l.label}
+              </Link>
+            ))}
+          </div>
+
+          <div className="shrink-0 space-y-4 px-6 pb-8 pt-2">
+            <Link
+              href={PHONE_URL}
+              className="flex min-h-[44px] items-center justify-center gap-2 font-dm text-lg text-cream"
+              onClick={() => setMobileOpen(false)}
             >
-              <motion.div variants={linkMotion}>
-                <Link
-                  href="/services"
-                  className="block border-b border-white/10 py-3 font-cormorant text-5xl font-light text-cream"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  Services
-                </Link>
-              </motion.div>
-
-              <motion.div variants={linkMotion}>
-                <button
-                  type="button"
-                  className="flex w-full min-h-[44px] items-center justify-between border-b border-white/10 py-3 text-left font-cormorant text-5xl font-light text-cream"
-                  onClick={() => setPracticeOpen((p) => !p)}
-                  aria-expanded={practiceOpen}
-                >
-                  Our Practice
-                  <ChevronDown
-                    className={`h-6 w-6 shrink-0 transition-transform ${practiceOpen ? "rotate-180" : ""}`}
-                  />
-                </button>
-                {practiceOpen ? (
-                  <div className="border-b border-white/10 pb-3 pl-6">
-                    {practiceSub.map((s) => (
-                      <Link
-                        key={s.href}
-                        href={s.href}
-                        className="block py-2 font-cormorant text-3xl font-light text-mist/70"
-                        onClick={() => setMobileOpen(false)}
-                      >
-                        {s.label}
-                      </Link>
-                    ))}
-                  </div>
-                ) : null}
-              </motion.div>
-
-              {mobileNavTail.map((l) => (
-                <motion.div key={l.href} variants={linkMotion}>
-                  <Link
-                    href={l.href}
-                    className="block border-b border-white/10 py-3 font-cormorant text-5xl font-light text-cream"
-                    onClick={() => setMobileOpen(false)}
-                  >
-                    {l.label}
-                  </Link>
-                </motion.div>
-              ))}
-            </motion.div>
-
-            <div className="shrink-0 space-y-4 px-6 pb-8 pt-2">
-              <Link
-                href={PHONE_URL}
-                className="flex min-h-[44px] items-center justify-center gap-2 font-dm text-lg text-cream"
-                onClick={() => setMobileOpen(false)}
-              >
-                <Phone className="h-5 w-5" />
-                {PHONE_NUMBER}
-              </Link>
-              <Link
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex min-h-[44px] w-full items-center justify-center rounded-lg bg-terra py-3 font-dm text-sm font-medium text-cream"
-                onClick={() => setMobileOpen(false)}
-              >
-                Book Appointment
-              </Link>
-            </div>
-          </motion.div>
-        ) : null}
-      </AnimatePresence>
+              <Phone className="h-5 w-5" />
+              {PHONE_NUMBER}
+            </Link>
+            <Link
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex min-h-[44px] w-full items-center justify-center rounded-lg bg-terra py-3 font-dm text-sm font-medium text-cream"
+              onClick={() => setMobileOpen(false)}
+            >
+              Book Appointment
+            </Link>
+          </div>
+        </div>
+      ) : null}
     </>
   );
 }

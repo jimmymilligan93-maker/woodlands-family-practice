@@ -1,37 +1,56 @@
-# Stories — approved recurring anecdotes
+# Stories guide — WFP blogs
 
-Use **at most one** of these per article or page, and only when it supports the point. Do not fabricate new anecdotes or patient scenarios for marketing.
+## Why stories work
+Patient-adjacent stories are the most powerful content format in healthcare 
+writing. They generate empathy, recognition, and trust simultaneously. 
+A reader who thinks "that sounds like me" will read to the end, return to 
+the site, and remember the clinic.
 
-## Practice origin (1998)
+## Privacy rules (non-negotiable)
+- Always third person: "a patient," "someone I saw recently," "a man in his 40s"
+- Never include suburb, workplace, unusual details, or anything identifying
+- Change incidental details (age, gender, situation) freely — the emotional 
+  truth is what matters
+- Never imply a story is about a current patient — use past tense and 
+  distance: "over the years," "more than once I've seen"
+- When in doubt, make it more composite: "this is something I see regularly, 
+  not just once"
 
-Woodlands Family Practice traces its roots to **1998**, when **two neighbouring clinics merged** to better serve the growing Woodlands community. Founding doctors including **Dr Mary McNulty** and **Dr Nigel Jones** helped shape a culture where continuity, kindness, and clinical rigour could coexist.
+## Story template
 
-## Partnership and training thread
+### The trigger
+What brought the patient in? Usually something small, delayed, or reluctant.
+"A woman came in about something she'd been putting off for two years."
 
-**Dr Hayden Elderfield** later joined the partnership, strengthening the practice's commitment to **training** and **comprehensive family medicine**.
+### The assumption
+What did the patient believe about their situation?
+"She assumed it was probably nothing. That's what she told herself."
 
-## Leadership today
+### What actually happened
+The outcome — not always dramatic, but always real.
+"It was nothing serious. But catching it early meant she left with a clear 
+answer instead of six months of wondering."
 
-The practice is now led by **Dr Elizabeth Elderfield** and **Dr David Jameson**, supported by a team of **11 GPs** who share a simple goal: to look after Woodlands families as we would our own.
+### The implication for the reader
+End the story by turning it outward.
+"If you've been putting something off — a skin check, a blood test, 
+a conversation about how you've been feeling — that's worth noticing."
 
-## Long continuity (Nigel)
+## Story placement
+- Stories work best as the second or third paragraph, after the featured 
+  snippet answer but before the detailed content.
+- Maximum one story per blog.
+- Stories should be 80–120 words. Not longer.
 
-**Dr Nigel Jones** has looked after families around Woodlands for **over 25 years** and is known (per his bio) for the time he spends with patients and a strong focus on **care of the elderly** and broad family medicine.
-
-## David: RFDS and path to Woodlands
-
-**Dr David Jameson** is a UK-trained GP who came to Australia in **1993** for what was meant to be a short outback stint with the **Royal Flying Doctor Service in Kalgoorlie**; a one-year contract became **twelve years**. His path included **Bega Garnbarringu (AMS)**, a **private GP/obstetric** period, then joining **Woodlands Family Practice in 2007**. He lists **skin cancer surveillance**, **Implanon and IUD** skills, and outside work **oboe with the WA doctor orchestra** and cycling—use the clinical parts for clinical content; hobbies only when a human tone genuinely helps.
-
-## Liz: local ties
-
-**Dr Elizabeth Elderfield** is described as a **local UWA graduate (2000)** with longstanding connections to Woodlands and the practice, with a special interest in **family medicine**.
-
-## Joe: local training and palliative care
-
-**Dr Joseph Derwort** grew up locally, studied medicine locally, lives locally; at the practice since **2019**, FRACGP **2020**; also works with **Silverchain's palliative care service**.
-
-## What not to do
-
-- Do not turn these into long narrative blocks in every post.
-- Do not add dialogue, made-up patient names, or dramatic scenes.
-- Do not combine two stories in one short piece unless it is a dedicated "Our history" style page.
+## Story library (seed examples — rewrite each time)
+1. The patient who put off a skin check for three summers. Came in eventually. 
+   Early detection. Left relieved.
+2. The parent who came in for their child but hadn't had their own check-up 
+   in four years. Ended up booking two appointments.
+3. The man who didn't know Medicare covered mental health sessions. 
+   Had been paying out of pocket or not going at all.
+4. The new arrival to Perth who didn't understand how GP referrals worked 
+   in Australia. Went to emergency three times when a GP visit would have 
+   sufficed.
+5. The patient who Googled their symptoms and was convinced of something 
+   serious. It was something manageable. The GP appointment took fifteen minutes.

@@ -1,26 +1,38 @@
-# Humour — Woodlands Family Practice
+# Humour guide — WFP blogs
 
-## Default: light touch, optional
+## Philosophy
+Humour in a GP blog does one thing: it signals that a real person wrote this. 
+It reduces the clinical distance. It should never be forced and never be the point.
+The joke is the seasoning, not the meal.
 
-Most pages do not need jokes. Clarity and kindness matter more than wit.
+## Three permitted modes
 
-When humour fits (e.g. a light community note, a seasonal reminder):
+### 1. Self-deprecating (GP admits to the universal human experience)
+Use when: the topic involves something everyone finds uncomfortable or awkward.
+Example: "I'll be honest — nobody loves a blood test. Including, sometimes, the 
+person ordering it."
+Example: "We GPs have a complicated relationship with Google. You've used it 
+before your appointment. We know. We're not offended."
 
-- Keep it **gentle and dry**, never sarcastic at the patient's expense.
-- Avoid clinical topics as punchlines (pain, mental health, weight, appearance, age, fertility, serious diagnoses).
-- No edgy, political, or divisive humour in practice-owned content.
+### 2. Observational (gently noting the patterns GPs see)
+Use when: there's a universal patient behaviour around the topic.
+Example: "There's a particular type of appointment I see every January. Someone 
+has made a New Year's resolution about their health and wants to do everything 
+at once. I admire the ambition."
+Example: "Perth in summer produces two reliable things: sunburn and patients 
+who waited three weeks to come in about it."
 
-## What does not work here
+### 3. Warm teasing (affectionate, never condescending)
+Use when: the patient tendency is to delay, avoid, or self-diagnose.
+Example: "If you've been 'meaning to get a skin check' for two summers running, 
+this is your sign."
+Example: "Yes, we've heard of Dr Google. No, we're not worried about the competition."
 
-- Meme-speak, internet slang, or trying to sound "relatable" with forced quirkiness.
-- Puns on medical conditions.
-- Self-deprecation that undermines trust ("we're hopeless at answering the phone"—even as a joke).
-
-## Safe patterns
-
-- **Observational:** Perth weather, school holidays, local footy season as context—not the main point.
-- **Human detail from approved stories** (see `references/stories.md`): e.g. a founding story told straight, with warmth, not as a gag.
-
-## Rule of thumb
-
-If removing the joke leaves the page stronger, remove it. If a line makes you smile but might worry someone who is anxious about their health, cut it.
+## Rules
+- Maximum one humour beat per 300 words.
+- Never make the patient the butt of the joke — humour is always WITH them, 
+  not at them.
+- Never use humour in blogs about mental health, grief, chronic illness diagnosis, 
+  or palliative care.
+- Humour should feel like it slipped out naturally, not like it was inserted. 
+  If it reads like a joke, rewrite it.

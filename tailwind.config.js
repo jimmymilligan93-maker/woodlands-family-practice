@@ -12,9 +12,9 @@ module.exports = {
         slate: "#57637B",
         cream: "#FAF7F2",
         mist: "#EDF0F5",
-        terra: "#C4603A",
+        terra: "#9C4226",
         charcoal: "#1E2B3C",
-        silver: "#8A95A8",
+        silver: "#6D7789",
       },
       fontFamily: {
         cormorant: ["var(--font-cormorant-garamond)", "serif"],

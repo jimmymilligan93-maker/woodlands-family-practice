@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BookingCtaBanner } from "@/components/BookingCtaBanner";
+import { siteHeroVisionBandUrl } from "@/lib/site-images";
 import { Footer } from "@/components/Footer";
 import { PageHero } from "@/components/PageHero";
 import { ServiceCategories } from "@/components/services/ServiceCategories";
@@ -16,9 +18,22 @@ export default function ServicesPage() {
         title="Our Services"
         subtitle="Comprehensive care for every stage of life — all under one roof."
       />
+      <section className="border-b border-mist bg-mist py-4">
+        <div className="mx-auto max-w-6xl px-6 font-dm text-sm text-slate">
+          Dedicated{" "}
+          <Link href="/skin-check-woodlands-perth" className="font-medium text-terra hover:underline">
+            skin checks — Woodlands and Perth northern suburbs
+          </Link>{" "}
+          and{" "}
+          <Link href="/travel-vaccination-woodlands-perth" className="font-medium text-terra hover:underline">
+            travel vaccination — Woodlands and Perth northern suburbs
+          </Link>
+          .
+        </div>
+      </section>
       <section className="relative min-h-[420px] w-full overflow-hidden bg-navy">
         <Image
-          src="https://wfpwa.com.au/wp-content/uploads/2022/10/vision-image.jpg"
+          src={siteHeroVisionBandUrl(960)}
           alt=""
           fill
           className="object-cover"
